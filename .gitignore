@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+env/
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# Misc
+.DS_Store
+
+# Large files
+data/coco2017/
+*.pt
+*.zip 

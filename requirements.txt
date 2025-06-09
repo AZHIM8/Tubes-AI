@@ -1,0 +1,8 @@
+ultralytics==8.0.145
+opencv-python
+numpy
+gtts
+pygame
+flask
+pillow
+gunicorn
