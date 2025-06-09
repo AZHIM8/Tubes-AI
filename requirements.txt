@@ -1,8 +1,9 @@
 ultralytics==8.0.145
-opencv-python
+opencv-python-headless
 numpy
 gtts
 pygame
 flask
 pillow
-gunicorn
+torch
+torchvision

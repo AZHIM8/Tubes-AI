@@ -12,8 +12,17 @@ import time
 
 app = Flask(__name__)
 
+# Download model if not exists
+def ensure_model():
+    model_path = 'yolov8n.pt'
+    if not os.path.exists(model_path):
+        print("Downloading YOLOv8n model...")
+        model = YOLO('yolov8n')  # This will automatically download the model
+        print("Model downloaded successfully!")
+    return YOLO(model_path)
+
 # Inisialisasi YOLOv8
-model = YOLO('yolov8n.pt')  # menggunakan model YOLOv8 nano
+model = ensure_model()
 pygame.mixer.init()
 
 # Konfigurasi folder audio
